@@ -9,12 +9,12 @@ def write_memo():
     print('별표(*) 3개 입력시 메모입력이 종료됩니다.')
 
 # mailbox 디렉토리로 이동.
-    os.chdir('/home/pi/mygit/R-pi/memo/mailbox')
+    os.chdir('/home/pi/memo/mailbox')
 
 # 날자를 입력받아 그 날자를 파일명으로 open.
     file_name = ('%s.txt' % day)
     memo_file = open(file_name ,'a')
-
+    memo_file.write(day+'일에 작성한 메모입니다.\n')
 # '***'입력시 프로그램이 종료되도록. 입력값이 한줄씩 저장되도록 \n 추가.
     while True:
         put = input()
