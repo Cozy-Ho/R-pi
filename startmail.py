@@ -9,7 +9,7 @@ def sendAutostartMail():
 	import smtplib
 	import string
 	USER = 'kj2693119@gmail.com'
-	PASS = 'Kangju1379/'
+	PASS = 'PASS_WORD'
 	TO = 'kj2693119@gmail.com'
 	SUBJECT = '[R-PI] Autostart Mail'
 	ip = subprocess.check_output("curl icanhazip.com", shell = True)
